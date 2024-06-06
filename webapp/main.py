@@ -4,7 +4,6 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
-
 current_dir = dirname(abspath(__file__))
 wellknown_path = join(current_dir, ".well-known")
 historical_data = join(current_dir, "weather.json")
@@ -23,7 +22,6 @@ def root():
     requiring to open the /docs path.
     """
     return RedirectResponse(url='/docs', status_code=301)
-
 
 @app.get('/countries')
 def countries():
