@@ -28,4 +28,4 @@ jobs:
             repo: context.repo.repo,
             title: "Linting results",
             body: "Linting has been completed. Please check the results."
-          });
+          });  
